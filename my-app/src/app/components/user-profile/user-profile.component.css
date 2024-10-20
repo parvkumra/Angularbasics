@@ -18,3 +18,15 @@
     flex-direction: column;
     gap: 4px;
 }
+.inside-age>input{
+    background-color: rgb(186, 197, 196);
+    height: 30px ;
+    width: 50px;
+    border: none;
+    
+}
+.inside-age{
+    display: flex;
+    gap: 10px;
+    margin-top: 4px;
+}

@@ -14,8 +14,19 @@
         [options]="['Single', 'Married']"></app-dropdown>
         <div class="dob">
     <div>DOB*</div>
-    <input type="date"/>
+    <input type="date" [(ngModel)]="dob" (change)="calculateAge()"/>
   </div>
+  <div>
+    <div>Age</div>
+    <div class="inside-age">
+        <input disabled type="text" [value]="age !== null ? age : ''" />
+       
+    </div>
+  </div>
+  <app-dropdown 
+  label="Gender" 
+  [options]="['Male', 'Female']"></app-dropdown>
+  <app-user-profilecomp label="Email" placeholder=""></app-user-profilecomp>
     </div>
   </div>
   
