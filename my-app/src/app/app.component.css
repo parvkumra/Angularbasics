@@ -1,0 +1,17 @@
+.input-search{
+padding: 10px 12px;
+background-color: rgb(32, 118, 121);
+color: white;
+border: none;
+margin-right: 10px;
+}
+.input-box{
+    padding: 8px 12px;  
+    margin: 6px;
+    width: 240px;
+}
+
+.box1{
+    display: flex;
+    flex-direction: row-reverse;
+}
