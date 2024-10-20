@@ -1,4 +1,21 @@
 <div class="userProfile">
-<h2 >Personal Details</h2>
-<app-user-profilecomp label="jello" placeholder="enter krdo"></app-user-profilecomp>
-</div>
+    <h2>Personal Details</h2>
+    <div class="boxcr">
+      <app-dropdown 
+        label="Hospital" 
+        [options]="['Oceania', 'Fortis', 'Apollo']"></app-dropdown>
+      <app-user-profilecomp label="First Name*" placeholder=""></app-user-profilecomp>
+      <app-user-profilecomp label="Middle Name" placeholder=""></app-user-profilecomp>
+      <app-user-profilecomp label="Last Name*" placeholder=""></app-user-profilecomp>
+    </div>
+    <div class="boxcr">
+        <app-dropdown 
+        label="Maritial Status" 
+        [options]="['Single', 'Married']"></app-dropdown>
+        <div class="dob">
+    <div>DOB*</div>
+    <input type="date"/>
+  </div>
+    </div>
+  </div>
+  

@@ -1,9 +1,9 @@
-.comp-box{
+.comp-box3{
     display: flex;
     flex-direction: column;
     width: 200px;
     gap: 4px;
 }
-.comp-box>input{
+.comp-box3>select{
     padding: 6px;
 }
