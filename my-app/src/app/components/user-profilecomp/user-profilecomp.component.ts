@@ -1,12 +1,15 @@
 import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
 @Component({
   selector: 'app-user-profilecomp',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],  // Add CommonModule here
   templateUrl: './user-profilecomp.component.html',
-  styleUrl: './user-profilecomp.component.css'
+  styleUrls: ['./user-profilecomp.component.css']  // Fix styleUrl to styleUrls
 })
 export class UserProfilecompComponent {
-  @Input() label: string='';
-  @Input() placeholder: string='';
+  @Input() label: string = '';
+  @Input() placeholder: string = '';
+  @Input() style: string = '200px';
 }

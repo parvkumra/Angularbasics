@@ -3,6 +3,7 @@
     flex-direction: column;
     width: 200px;
     gap: 4px;
+    margin: 6px;
 }
 .comp-box>input{
     padding: 6px;
