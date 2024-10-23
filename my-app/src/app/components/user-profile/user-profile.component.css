@@ -10,6 +10,11 @@
     gap: 16px;
     margin-bottom: 15px;
     align-items: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: center;
+    
+    flex: 1;
 }
 .dob>input{
     padding: 6px;
@@ -32,6 +37,38 @@
     margin-top: 4px;
 }
 
-app-user-profilecomp{
-    margin-right: 4px;
+app-user-profilecomp {
+    flex: 1; /* Allow this component to take the remaining space */
+    min-width: 0; /* Ensure it can shrink properly */
+}
+
+.visitProfile{
+    width:82vw;
+    margin-top: 16px;
+    background-color: rgb(183, 247, 247);
+    padding:5px 16px;
+}
+
+.boxcrs{
+    display: flex;
+   flex-direction: column;
+   justify-items: flex-start;
+}
+.boxcr3{
+    display: flex;
+    gap: 16px;
+    margin-bottom: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: center;
+    
+   
+    width: 600px; 
+}
+.kinProfile{
+    width:82vw;
+    margin-top: 16px;
+    background-color: rgb(199, 245, 245);
+    padding:5px 16px;
 }

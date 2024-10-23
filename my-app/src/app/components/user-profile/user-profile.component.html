@@ -1,40 +1,63 @@
-<div class="fk">
-  <div class="jk"></div>
-<div class="op">
+
   <div class="userProfile">
     
     <h2>Personal Details</h2>
-    <div class="boxcr">
-      <app-dropdown label="Hospital" [options]="['Oceania', 'Fortis', 'Apollo']"></app-dropdown>
-      <app-user-profilecomp label="First Name*" placeholder=""></app-user-profilecomp>
-      <app-user-profilecomp label="Middle Name" placeholder=""></app-user-profilecomp>
-      <app-user-profilecomp label="Last Name*" placeholder=""></app-user-profilecomp>
-    </div>
-    <div class="boxcr">
-      <app-dropdown label="Maritial Status" [options]="['Single', 'Married']"></app-dropdown>
-      <div class="dob">
-        <div>DOB*</div>
-        <input type="date" [(ngModel)]="dob" (change)="calculateAge()" />
+    <div class="boxcrs">
+      <div class="boxcr">
+        <app-dropdown label="Hospital" [options]="['Oceania', 'Fortis', 'Apollo']"></app-dropdown>
+        <app-user-profilecomp label="First Name*" placeholder=""></app-user-profilecomp>
+        <app-user-profilecomp label="Middle Name" placeholder=""></app-user-profilecomp>
+        <app-user-profilecomp label="Last Name*" placeholder=""></app-user-profilecomp>
       </div>
-      <div>
-        <div>Age</div>
-        <div class="inside-age">
-          <input disabled type="text" [value]="age !== null ? age : ''" />
-  
+      <div class="boxcr">
+        <app-dropdown label="Maritial Status" [options]="['Single', 'Married']"></app-dropdown>
+        <div class="dob">
+          <div>DOB*</div>
+          <input type="date" [(ngModel)]="dob" (change)="calculateAge()" />
         </div>
+        <div>
+          <div>Age</div>
+          <div class="inside-age">
+            <input disabled type="text" [value]="age !== null ? age : ''" />
+    
+          </div>
+        </div>
+        <app-dropdown label="Gender" [options]="['Male', 'Female']"></app-dropdown>
+        <app-user-profilecomp label="Email" placeholder=""></app-user-profilecomp>
       </div>
-      <app-dropdown label="Gender" [options]="['Male', 'Female']"></app-dropdown>
-      <app-user-profilecomp label="Email" placeholder=""></app-user-profilecomp>
+      <div class="boxcr">
+        <app-user-profilecomp  label="Address line 1*"  placeholder=""></app-user-profilecomp>
+        <!-- <app-user-profilecomp label="Address line 2" placeholder=""></app-user-profilecomp> -->
+        <app-user-profilecomp  label="Address line 2"  placeholder=""></app-user-profilecomp>
+        <app-dropdown label="Country" [options]="['India', 'NZ', 'Australia']"></app-dropdown>
+        <app-user-profilecomp  label="State"  placeholder=""></app-user-profilecomp>
+       
+      </div>
+      <div class="boxcr">
+        <app-user-profilecomp  label="ID No*"  placeholder=""></app-user-profilecomp>
+        <app-user-profilecomp  label="Remark"  placeholder=""></app-user-profilecomp>
+      </div>
     </div>
-    <div class="boxcr">
-      <app-user-profilecomp  label="Address line 1*"  placeholder=""></app-user-profilecomp>
-      <!-- <app-user-profilecomp label="Address line 2" placeholder=""></app-user-profilecomp> -->
-      <app-user-profilecomp  label="Address line 2"  placeholder=""></app-user-profilecomp>
-      <app-dropdown label="Country" [options]="['India', 'NZ', 'Australia']"></app-dropdown>
-      <app-user-profilecomp  label="State"  placeholder=""></app-user-profilecomp>
-     
-    </div>
-  </div>
-</div>
 
+  </div>
+<div class="visitProfile">
+  <h2>Visit Details</h2>
+    <div class="boxcr">
+     
+      <app-dropdown label="Symptoms*" [options]="['Fever', 'Headache', 'Cold']"></app-dropdown>
+      <app-dropdown label="Department*" [options]="['D1', 'D2', 'D3']"></app-dropdown>
+      <app-dropdown label="Doctor*" [options]="['DR1', 'DR2', 'DR3']"></app-dropdown>
+      <app-dropdown label="Slot*" [options]="['1', '2', '3']"></app-dropdown>
+      <app-dropdown label="Time*" [options]="['12', '2', '4']"></app-dropdown>
+    </div>
+    <div class="boxcr3">
+      <app-dropdown label="Ref Dr.*" [options]="['RD1', 'RD2', 'RD3']"></app-dropdown>
+      <app-user-profilecomp label="Remarks" placeholder=""></app-user-profilecomp>
+
+      
+    </div>
+    </div>
+    
+<div class="kinProfile">
+  <h2>Next To Kin Details</h2>
 </div>
