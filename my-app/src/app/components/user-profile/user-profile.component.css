@@ -72,3 +72,22 @@ app-user-profilecomp {
     background-color: rgb(199, 245, 245);
     padding:5px 16px;
 }
+.boxcr4{
+    display: flex;
+    gap: 16px;
+    margin-bottom: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: center;
+    
+   
+    width: 1000px; 
+}
+.inProfile{
+    width:82vw;
+    margin-top: 16px;
+    background-color: rgb(231, 249, 249);
+    padding:5px 16px;
+
+}
