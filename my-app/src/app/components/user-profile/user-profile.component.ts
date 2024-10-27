@@ -22,7 +22,12 @@ export class UserProfileComponent {
   dob: string = ''; 
   age: number | null = null; 
   files: NgxFileDropEntry[] = [];
+  activeOption:string='profile';
 
+  changeOption(option:string){
+    this.activeOption=option;
+
+  }
   calculateAge() {
     if (this.dob) {
       const dobDate = new Date(this.dob);

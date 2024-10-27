@@ -1,6 +1,6 @@
 .userProfile{
   
-   width:82vw;
+   
    margin-top: 15px;
    background-color: rgb(91, 223, 223);
    padding:5px 16px;
@@ -43,7 +43,7 @@ app-user-profilecomp {
 }
 
 .visitProfile{
-    width:82vw;
+   
     margin-top: 16px;
     background-color: rgb(183, 247, 247);
     padding:5px 16px;
@@ -67,7 +67,7 @@ app-user-profilecomp {
     width: 600px; 
 }
 .kinProfile{
-    width:82vw;
+    
     margin-top: 16px;
     background-color: rgb(199, 245, 245);
     padding:5px 16px;
@@ -143,4 +143,45 @@ app-user-profilecomp {
     background-color: rgb(68, 73, 68);
     color: white;
     border: none;
+  }
+  .upper-section{
+    display: flex;
+    width: auto;
+    
+    justify-content: stretch;
+    margin-left: 250px;
+    margin-top: 40px;
+    
+  }
+  .firsti{
+
+    border-right: 0.1rem solid rgb(0, 0, 0);
+  
+    padding: 15px 25px;
+    font-weight: normal;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+  .last{
+    border: none;
+    padding: 15px 25px;
+    font-weight: normal;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+  .main-section{
+    height: 100vh;
+    width: 82vw;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    align-items: center;
+  }
+  .active{
+   background-color: black;
+    color: white;
+    padding: 15px 25px;
+    font-weight: normal;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease;
   }

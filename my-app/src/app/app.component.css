@@ -60,3 +60,6 @@ nav {
     width: 100%; /* Ensure it spans the full width */
     z-index: 1000; /* Higher than other elements */
 }
+hr{
+    width: 100vw;
+}
