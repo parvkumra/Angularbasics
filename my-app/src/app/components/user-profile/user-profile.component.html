@@ -20,16 +20,19 @@
     </div>
     <div class="boxcr">
       <app-dropdown label="Maritial Status" [options]="['Single', 'Married']"></app-dropdown>
-      <div class="dob">
-        <div>DOB*</div>
-        <input type="date" [(ngModel)]="dob" (change)="calculateAge()" />
-      </div>
-      <div>
-        <div>Age</div>
-        <div class="inside-age">
-          <input disabled type="text" [value]="age !== null ? age : ''" />
-  
+      <div class="hel">
+        <div class="dob">
+          <div>DOB*</div>
+          <input type="date" [(ngModel)]="dob" (change)="calculateAge()" />
         </div>
+        <div>
+          <div>Age</div>
+          <div class="inside-age">
+            <input disabled type="text" [value]="age !== null ? age : ''" />
+    
+          </div>
+      </div>
+      
       </div>
       <app-dropdown label="Gender" [options]="['Male', 'Female']"></app-dropdown>
       <app-user-profilecomp label="Email" placeholder=""></app-user-profilecomp>
@@ -45,6 +48,10 @@
     <div class="boxcr">
       <app-user-profilecomp  label="ID No*"  placeholder=""></app-user-profilecomp>
       <app-user-profilecomp  label="Remark"  placeholder=""></app-user-profilecomp>
+    </div>
+    <div class="hu">
+    
+     <button >Next</button>
     </div>
   </div>
 </div>
@@ -64,6 +71,10 @@
 
     
   </div>
+  <div class="hu">
+    
+    <button >Next</button>
+   </div>
 </div>
 <div *ngIf="activeOption === 'kin'">
   <div class="boxcr4">
@@ -73,6 +84,10 @@
     <app-user-profilecomp label="Contact No*" placeholder=""></app-user-profilecomp>
 
   </div>
+  <div class="hu">
+    
+    <button >Next</button>
+   </div>
 </div>
 <div *ngIf="activeOption === 'insurance'">
   <div class="boxcr4">
@@ -84,6 +99,10 @@
     <app-dropdown label="ID Type*" [options]="['ID1', 'ID2', 'ID3']"></app-dropdown>
 
   </div>
+  <div class="hu">
+    
+    <button >Next</button>
+   </div>
 </div>
 </div>
 

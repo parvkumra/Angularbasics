@@ -2,8 +2,13 @@
     display: flex;
     flex-direction: column;
     width: 200px;
+   
     gap: 4px;
 }
 .comp-box3>select{
     padding: 6px;
+    height: 46px;
+}
+.comp-box1{
+    font-size: medium;
 }

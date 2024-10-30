@@ -2,10 +2,12 @@
     display: flex;
     flex-direction: column;
     width: auto;
+   
     gap: 4px;
     margin: 6px;
     flex-grow: inherit;
 }
 .comp-box>input{
     padding: 6px;
+    height: 30px;
 }
